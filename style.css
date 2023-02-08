@@ -9,7 +9,18 @@ body {
     min-width: 400px;
 } 
 
+/*
+Este selector sería válido, pero descobre un erro no Chrome cando
+aplica o estilo ó elemento <script> que o complemento "Live Server" de
+VS Code inserta no final do <body> do documento.
+Versión 1.43.88 Chromium: 105.0.5195.68 (Build oficial) (64 bits)
 body > * {
+    display: flex;
+    justify-content: center;
+}
+*/
+
+header, main, aside, footer {
     display: flex;
     justify-content: center;
 }
